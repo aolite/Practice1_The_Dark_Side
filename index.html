@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Practice 1: The Dark side of the Force</title>
+
+    <meta name="description" content="Practice 1: The Dark side of the Force">
+    <meta name="author" content="Aitor Corchero &amp; Jordi Planes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/solarized-light.css">
+
+    <!-- Star Wars Animation -->
+    <link rel="stylesheet" href="css/theme/starWars.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section id="UserBehaviourTitle">
+          <h2 id>Practice 1: The Dark Side of the Force</h2>
+          <h4>The Hangar of the Revel Alliance Problem</h4>
+          <p>
+            <small>Aitor Corchero &amp; Jordi Planes</small>
+          </p>
+          <small><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></small>
+        </section>
+
+        <section id="MainContent">
+          <p id="start">A short time ago in a near galaxy&hellip;</p>
+
+          <div id="titles">
+            <div id="titlecontent">
+              <p class="center">EPISODE I<br /> The Dark Side of the Force</p>
+              <p>It is a period of civil war.</p>
+              <p>Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
+              <p>During the battle, Rebel spies have steal secret plans to destroy the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
+              <p>Pursued by the Empire's army, a new battle has started. 
+              <p>The revel force is inmmersed in a hard battle.... Lot of revel soldiers has lost their lives...</p>
+              <p>In this war, you will in charge of managing the hangar spaceships places to get fuelling as fast as posible </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="MainObjective">
+          <section id="Objective">
+            <h3>Main Objective</h3>
+            <p>Develop an algorithm capable of returning the first free space within the hangar. </p>
+          </section>
+          <section id="Example">
+            <p>For example, suposing we have 5 places in the hangar and the following spaceships enters: </p>
+            <ul>
+              <li class="fragment"> A X-wing to the 2nd position</li>
+              <li class="fragment"> A Y-wing to the 5th position</li>
+              <li class="fragment"> A Z-wing to the 1st position</li>
+            </ul>
+            <div class="fragment">
+              <p><center><strong>The first free position is the 3rd</strong></center></p>
+            </div>
+          </secton>
+        </section>
+      </section>
+      <section id="Requeriments">
+        <section id="MainRequeriments">
+          <h3>Requirements</h3>
+          <ol class= "fragment">
+            <li>A program that get the data from a text file and return the optim value.</li>
+            <li>A report that contains: </li>
+            <ul>
+              <li class="fragment">Pseudo-code of the main designed recursive algorithms</li>
+              <li class="fragment">Algorithm Cost Estimation</li>
+              <li class="fragment">Experimental Cost of the program (algorithms)</li>
+            </ul>
+          </ol>
+        </section>
+        <section id="Main Considerations">
+          <p>The application has to follow the established syntaxis: </p>
+          <code class="bash">
+            $ ./hangar [input_file]
+          </code>
+          <div class="fragment">
+            <strong><p>If there is no defined optional parameters, we will consider the standard input to read elements and standard output to write the results.</p></strong>
+          </div>
+
+        </section>
+      </section>
+
+      <section id="Evaluation">
+        <section id="EvaluationMethod">
+          <h3>Evaluation and Presentation</h3>
+          <ul>
+            <li class="fragment"> <p>Report: 3 points</p> </li>
+            <li class="fragment"> <p>Algorithms Design: 3 points</p> </li>
+            <li class="fragment"> <p>Practice validation (Exam day): 4 points</p> </li>
+          </ul>
+        </section>
+        <section id="PracticePresentation">
+          <center>
+            <p><strong><big>The practice can be performed in paris. It represents the 25% of the final result. The practice (code and report) has to be upload in the "Campus Virtual" in a ZIP or TGZ format.</big></strong></p>
+          </center>
+        </section>
+      </section>
+
+      <section id="finale">
+        <h3>May the Force be with you</h3>
+      </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        slideNumber: "c/t",
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ],
+
+        // Parallax background image
+        parallaxBackgroundImage: 'images/simple_space.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+
+        // Parallax background size
+        parallaxBackgroundSize: '1920px 1200px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: 200,
+        parallaxBackgroundVertical: 50
+
+      });
+
+    </script>
+
+  </body>
+</html>
